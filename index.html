@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/map.css" />
+    <title>Risk</title>
+  </head>
+  <body>
+    <div class="map" id="map">
+      <script src="./js/map.js"></script>
+    </div>
+    <div class="logo-player-container">
+      <div class="logo"></div>
+      <div class="player-name" id="player">Shivi</div>
+    </div>
+    <div class="right-top-menu"><div id="help"></div></div>
+    <div class="players">
+      <div class="player">
+        <span>Sid</span>
+        <div id="player1" class="color-box"></div>
+      </div>
+      <div class="player">
+        <span>Noora</span>
+        <div id="player2" class="color-box"></div>
+      </div>
+      <div class="player current-player">
+        <span>Shivi</span>
+        <div id="player3" class="color-box"></div>
+      </div>
+      <div class="player">
+        <span>Rashmi</span>
+        <div id="player4" class="color-box"></div>
+      </div>
+      <div class="player">
+        <span>Santosh</span>
+        <div id="player5" class="color-box"></div>
+      </div>
+      <div class="player">
+        <span>Drishya</span>
+        <div id="player6" class="color-box"></div>
+      </div>
+    </div>
+    <div class="cavalry">
+      <span id="cavalry-count">12</span>
+    </div>
+    <div class="reinforcement-container">
+      <div class="reinforcement-name center">Reinforcement Table</div>
+      <input type="checkbox" id="checkbox" />
+      <label for="checkbox" class="details-icon"></label>
+      <div class="reinforce-table">
+        <div class="continent-detail" id="north-america">
+          <span>North America</span> <span>5</span>
+        </div>
+        <div class="continent-detail" id="south-america">
+          <span>South America</span> <span>2</span>
+        </div>
+        <div class="continent-detail" id="africa">
+          <span>Africa</span> <span>3</span>
+        </div>
+        <div class="continent-detail" id="asia">
+          <span>Asia</span><span>7</span>
+        </div>
+        <div class="continent-detail" id="europe">
+          <span>Europe</span> <span>5</span>
+        </div>
+        <div class="continent-detail" id="australia">
+          <span>Australia</span> <span>2</span>
+        </div>
+      </div>
+    </div>
+    <div class="soldier-details">
+      <div class="soldier-icon"></div>
+      <div class="soldier-count" id="soldier-count">3</div>
+    </div>
+    <div class="cards-details">
+      <div class="cards-symbol"></div>
+      <div class="cards-count" id="cards-count">3</div>
+      <input type="checkbox" id="card-checkbox" />
+      <label for="card-checkbox" class="card-icon"></label>
+      <div class="cards-slider">
+        <div class="soldier-card" id="infantry">
+          <img src="./images/infantry.png" class="soldier-card-icon" />
+          <div class="soldier-card-count">3</div>
+        </div>
+        <div class="soldier-card" id="cavalry">
+          <img src="./images/cavalry.png" class="soldier-card-icon" />
+          <div class="soldier-card-count">1</div>
+        </div>
+        <div class="soldier-card" id="artillery">
+          <img src="./images/artillery.png" class="soldier-card-icon" />
+          <div class="soldier-card-count">7</div>
+        </div>
+        <div class="soldier-card" id="wild">
+          <img src="./images/wild.png" class="soldier-card-icon" />
+          <div class="soldier-card-count">2</div>
+        </div>
+      </div>
+    </div>
+    <div class="activity-log-container">
+      <div class="activity-title">Activity</div>
+      <div class="activity-body" id="activity-log">
+        <div class="activity-details">
+          <span class="activity-message" id="message1">
+            Player 1 has deployed 6 units in India.
+          </span>
+          <span class="time-stamp" id="time-stamp1">now</span>
+        </div>
+        <div class="activity-details">
+          <span class="activity-message" id="message1">
+            Player 6 has drawn a card from deck.
+          </span>
+          <span class="time-stamp" id="time-stamp1">a minute ago</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
