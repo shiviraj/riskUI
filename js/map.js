@@ -1034,6 +1034,9 @@ const getElement = elementBy => document.querySelector(elementBy);
 const main = function() {
   const $map = getElement('#map');
   $map.innerHTML = mapCode;
+  setInterval(() => {
+    location.reload();
+  }, 2000);
 };
 
 window.onload = main();
